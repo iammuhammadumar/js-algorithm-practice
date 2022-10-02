@@ -1,19 +1,26 @@
-function calculate(a, b, operator) {
-    if (operator == '+') {
-        return a + b;
-    }
-    else if (operator == '-') {
-        return a - b;
-    }
-    else if (operator == '*') {
-        return a * b;
-    }
-    else {
-        return a / b;
-    };
+console.log(5 + 3);
+console.log(12 - 4);
+console.log(2 * 4);
+console.log(64 / 8);
+
+function calculateSum(a, b) {
+    return a + b;
 };
 
-console.log('Sum is:', calculate(3, 4, '+'));
-console.log('Subtract is:', calculate(3, 4, '-'));
-console.log('Multiply is:', calculate(3, 4, '*'));
-console.log('Devidie is:', calculate(3, 4, '/'));
+function calculateSubtract(a, b) {
+    return a - b;
+};
+
+
+function calculateMultiply(a, b) {
+    return a * b;
+};
+
+function calculateDevidie(a, b) {
+    return a / b;
+};
+
+console.log('calculateSum is:', calculateSum(51, 3));
+console.log('calculateSubtract is:', calculateSubtract(2, 4));
+console.log('calculateMultiply is:', calculateMultiply(25, 4));
+console.log('calculateDevidie is:', calculateDevidie(64, 2));
